@@ -70,7 +70,7 @@ body{
 .top-section-text{
     text-align: center;
     margin-top: 111px;
-    margin-right: 167px;
+    margin-right: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +85,7 @@ body{
     line-height: 53px;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 18px;
 }
 .section-shop-button:hover{
     color: #494949;
@@ -95,6 +96,8 @@ body{
     border-color: #ffa800;
     text-transform: uppercase;
     font-weight: 700;
+    width: 139px;
+    height: 39px;
 }
 .product-item .tocart:hover{
     background-color:  #ff7e00;
@@ -156,27 +159,40 @@ body{
     text-transform: initial;
 }
 .bottom-section .left-part-text{
-    width: 292px;
+    width: 300px;
     color: #fff;
     margin-bottom: 60px;
     margin-left: 60px;
 }
+.bottom-section .left-part-text p{
+    margin-bottom: 0;
+
+}
 .bottom-section .left-part-text .section-title{
     color: #fff;
+    margin-left: -7px;
+    letter-spacing: -3.5px;
 }
 .bottom-section .left-part-text .section-shop-button{
     color: #fff;
     border-color: #fff;
 }
 .bottom-section .section-title{
-    font-size: 36px;
+    font-size: 48px;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 95px;
+    line-height: 40px;
 }
 .bottom-section .section-subtitle{
     color: #fff;
     text-transform: uppercase;
-    padding: 0 80px;
+    padding: 0 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.bottom-section .right-part .section-title{
+    font-size: 32px;
+    margin-bottom: 0;
 }
 .bottom-section .section-subtitle:before,.bottom-section .section-subtitle:after{
     height: 2px;
@@ -199,7 +215,7 @@ body{
 }
 .header.content{
     display: flex;
-    padding: 20px;
+    padding: 18px 20px;
     align-items: center;
 }
 .logo{
@@ -215,14 +231,16 @@ body{
     background: url("../images/face.png") no-repeat left center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 240px;
+    max-width: 212px;
     margin-bottom: 0;
 }
 .header.links li{
     list-style: none;
     margin: 0;
     color:  #7e807e;
+}
+.header.links li.authorization-link{
+    margin-right: 15px;
 }
 .header.links a{
     color:  #ffa800;
@@ -234,6 +252,8 @@ body{
 
 .minicart-wrapper{
     order: 4;
+    margin-right: 12px;
+    margin-left: 0;
 }
 .minicart-wrapper .action.showcart:before{
     content: '';
@@ -267,6 +287,7 @@ body{
 }
 .nav-sections{
     background-color:  #5a6465;
+    margin-bottom: 18px;
     display: flex;
     justify-content: center;
 }
@@ -277,6 +298,7 @@ body{
     color: #fff;
     font-size: 14px;
     font-weight: 600;
+    line-height: 44px;
     text-transform: uppercase;
     display: inline-block;
     border-bottom: 3px solid transparent;
@@ -296,6 +318,9 @@ body{
 }
 .owl-stage{
     display: flex;
+}
+.owl-stage .product-image-container{
+    width: 100% !important;
 }
 .owl-stage .owl-item{
     flex-shrink: 0;
@@ -336,14 +361,14 @@ body{
     height: 65px;
     background: url("../images/left-arrow.png") no-repeat center;
     float: left;
-    margin-left: -20px;
+    margin-left: -40px;
 }
 .owl-next{
     width: 18px;
     height: 65px;
     background: url("../images/right-arrow.png") no-repeat center;
     float: right;
-    margin-right: -20px;
+    margin-right: -40px;
 }
 .owl-nav{
     position: absolute;
@@ -354,6 +379,7 @@ body{
 }
 .block.newsletter .title{
     display: block;
+    margin-bottom: 15px;
 }
 .page-main{
     padding: 0 10px;
@@ -392,13 +418,14 @@ body{
 .footer.content{
     display: flex;
     justify-content: space-between;
+    padding: 40px 10px 0;
 }
 .footer-menu{
     order: 1;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-right: 160px;
+    margin-right: 140px;
 }
 .footer-menu a{
     color:  #919191;
@@ -414,12 +441,12 @@ body{
     min-width: 180px;
 }
 .footer.content ul.account-menu{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .footer-menu .footer-menu-label{
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .footer-menu  .social-menu{
     display: flex;
