@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bodoni';
-    src: url('../fonts/bodoni.woff') format('woff'), url('../fonts/bodoni.ttf')  format('truetype'), url('../fonts/BodoniBT-Book/bodoni.woff2') format('woff2');
+    src: url('../fonts/bodoni.woff') format('woff'), url('../fonts/bodoni.ttf')  format('truetype'), url('../fonts/bodoni.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -240,7 +240,10 @@ body{
     color:  #7e807e;
 }
 .header.links li.authorization-link{
-    margin-right: 15px;
+    margin-right: 3px;
+}
+.header.links li.authorization-link:after{
+    content:'or';
 }
 .header.links a{
     color:  #ffa800;
@@ -256,7 +259,7 @@ body{
     margin-left: 0;
 }
 .minicart-wrapper .action.showcart:before{
-    content: '';
+    content: '' !important;
     width: 39px;
     height: 28px;
     background: url("../images/basket.png") no-repeat;
